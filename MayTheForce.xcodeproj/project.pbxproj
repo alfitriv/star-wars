@@ -13,10 +13,11 @@
 		3805FC2921E0E4D20055883A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3805FC2821E0E4D20055883A /* Assets.xcassets */; };
 		3805FC2C21E0E4D20055883A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3805FC2A21E0E4D20055883A /* LaunchScreen.storyboard */; };
 		3805FC3721E0E4D20055883A /* MayTheForceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC3621E0E4D20055883A /* MayTheForceTests.swift */; };
-		3805FC4321E0E4F00055883A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC4121E0E4F00055883A /* Result.swift */; };
+		3805FC4321E0E4F00055883A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC4121E0E4F00055883A /* Person.swift */; };
 		3805FC4421E0E4F00055883A /* StarWars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC4221E0E4F00055883A /* StarWars.swift */; };
 		3805FC4621E0E5020055883A /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 3805FC4521E0E5020055883A /* people.json */; };
 		3805FC4821E0E50D0055883A /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC4721E0E50D0055883A /* NetworkLayer.swift */; };
+		3805FC8E21E3063D0055883A /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC8D21E3063D0055883A /* PeopleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +41,11 @@
 		3805FC3221E0E4D20055883A /* MayTheForceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTheForceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3805FC3621E0E4D20055883A /* MayTheForceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayTheForceTests.swift; sourceTree = "<group>"; };
 		3805FC3821E0E4D20055883A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3805FC4121E0E4F00055883A /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		3805FC4121E0E4F00055883A /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3805FC4221E0E4F00055883A /* StarWars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWars.swift; sourceTree = "<group>"; };
 		3805FC4521E0E5020055883A /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
 		3805FC4721E0E50D0055883A /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		3805FC8D21E3063D0055883A /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,7 @@
 			children = (
 				3805FC4721E0E50D0055883A /* NetworkLayer.swift */,
 				3805FC4521E0E5020055883A /* people.json */,
-				3805FC4121E0E4F00055883A /* Result.swift */,
+				3805FC4121E0E4F00055883A /* Person.swift */,
 				3805FC4221E0E4F00055883A /* StarWars.swift */,
 				3805FC2121E0E4D10055883A /* AppDelegate.swift */,
 				3805FC2321E0E4D10055883A /* ViewController.swift */,
@@ -95,6 +97,7 @@
 				3805FC2821E0E4D20055883A /* Assets.xcassets */,
 				3805FC2A21E0E4D20055883A /* LaunchScreen.storyboard */,
 				3805FC2D21E0E4D20055883A /* Info.plist */,
+				3805FC8D21E3063D0055883A /* PeopleCell.swift */,
 			);
 			path = MayTheForce;
 			sourceTree = "<group>";
@@ -211,7 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3805FC4421E0E4F00055883A /* StarWars.swift in Sources */,
-				3805FC4321E0E4F00055883A /* Result.swift in Sources */,
+				3805FC4321E0E4F00055883A /* Person.swift in Sources */,
+				3805FC8E21E3063D0055883A /* PeopleCell.swift in Sources */,
 				3805FC2421E0E4D10055883A /* ViewController.swift in Sources */,
 				3805FC4821E0E50D0055883A /* NetworkLayer.swift in Sources */,
 				3805FC2221E0E4D10055883A /* AppDelegate.swift in Sources */,

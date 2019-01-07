@@ -9,5 +9,5 @@
 import Foundation
 
 struct StarWars: Codable {
-    var results: [Result]
+    var results: [Person]
 }
