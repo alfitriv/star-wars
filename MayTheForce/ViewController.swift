@@ -19,7 +19,7 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        networkLayer.fetchMovies(successHandler: { [weak self] (starwars) in
+        networkLayer.fetchPeople(successHandler: { [weak self] (starwars) in
             print(starwars)
             guard let strongSelf = self, let results = starwars?.results else {
                 return

@@ -22,8 +22,9 @@ class PeopleCell: UITableViewCell {
     }
     
     func updateData(model: Person) {
+        var prettyFormatter = Utils.dateFormatter
         textLabel?.text = model.name
-        detailTextLabel?.text = model.height
+        detailTextLabel?.text = prettyFormatter.string(from: model.created)
     }
 
 }

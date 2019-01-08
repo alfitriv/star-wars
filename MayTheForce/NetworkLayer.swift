@@ -10,7 +10,19 @@ import Foundation
 
 //1 Make http request
 struct NetworkLayer {
-    func fetchMovies(successHandler: @escaping (StarWars?) -> Void, errorHandler: @escaping (Error) -> Void) {
+    
+    
+    static var jsonDecoder: JSONDecoder = {
+        let jsonDecoder = JSONDecoder()
+        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        jsonDecoder.dateDecodingStrategy = .formatted(dateFormatter)
+        return jsonDecoder
+    }()
+    
+    
+    func fetchPeople(successHandler: @escaping (StarWars?) -> Void, errorHandler: @escaping (Error) -> Void) {
         let session = URLSession.shared
         
         //Making http request
@@ -36,10 +48,8 @@ struct NetworkLayer {
             }
             
             //Decoding
-            let jsonDecoder = JSONDecoder()
-            jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
             do {
-                let movies = try jsonDecoder.decode(StarWars.self, from: data)
+                let movies = try  NetworkLayer.jsonDecoder.decode(StarWars.self, from: data)
                 
                 //change thread to main
                 DispatchQueue.main.async {
@@ -51,6 +61,23 @@ struct NetworkLayer {
             }
             }.resume()
     }
+    
+//    func fetchPlanet() {
+//        let session = URLSession.shared
+//
+//        //make http request
+//        var urlRequest = URLRequest(url: URL(string: "https://swapi.co/api/planets/")!)
+//        session.dataTask(with: urlRequest){ (data, response, error) in
+//            guard error == nil else {
+//                return
+//            }
+//            guard case let httpResponse == response as? HTPPURLResponse, response.statusCode >= 200 && httpResponse.statusCode < 300 else {
+//                return
+//            }
+//
+//        }
+//
+//    }
 }
 
 
