@@ -67,11 +67,8 @@ struct NetworkLayer {
 //
 //        //make http request
 //        var urlRequest = URLRequest(url: URL(string: "https://swapi.co/api/planets/")!)
-//        session.dataTask(with: urlRequest){ (data, response, error) in
+//        session.dataTask(with: urlRequest){ (data2, response2, error) in
 //            guard error == nil else {
-//                return
-//            }
-//            guard case let httpResponse == response as? HTPPURLResponse, response.statusCode >= 200 && httpResponse.statusCode < 300 else {
 //                return
 //            }
 //

@@ -94,6 +94,7 @@
 				3805FC4721E0E50D0055883A /* NetworkLayer.swift */,
 				3805FC4521E0E5020055883A /* people.json */,
 				3805FC4121E0E4F00055883A /* Person.swift */,
+				3805FC8D21E3063D0055883A /* PeopleCell.swift */,
 				3805FC4221E0E4F00055883A /* StarWars.swift */,
 				3805FC8F21E339390055883A /* Planet.swift */,
 				3805FC2121E0E4D10055883A /* AppDelegate.swift */,
@@ -102,7 +103,6 @@
 				3805FC2821E0E4D20055883A /* Assets.xcassets */,
 				3805FC2A21E0E4D20055883A /* LaunchScreen.storyboard */,
 				3805FC2D21E0E4D20055883A /* Info.plist */,
-				3805FC8D21E3063D0055883A /* PeopleCell.swift */,
 				3805FC9121E33E030055883A /* Utils.swift */,
 			);
 			path = MayTheForce;

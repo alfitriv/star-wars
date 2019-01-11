@@ -16,11 +16,20 @@ class ViewController: UITableViewController {
             tableView.reloadData()
         }
     }
+    
+    let cellHeight: CGFloat = 200
+
+    
+    var imageViewBackground: UIImageView!
 
     override func viewDidLoad() {
+        tableView.backgroundColor = .black
         super.viewDidLoad()
+        tableView.contentInset = UIEdgeInsets(top: 200, left: 0, bottom: 0, right: 0)
+        tableView.separatorColor = .clear
+        addBackground()
         networkLayer.fetchPeople(successHandler: { [weak self] (starwars) in
-            print(starwars)
+            //print(starwars)
             guard let strongSelf = self, let results = starwars?.results else {
                 return
             }
@@ -64,6 +73,39 @@ class ViewController: UITableViewController {
         }
         peopleCell.updateData(model: people[indexPath.row])
         return peopleCell
+    }
+    
+    func addBackground() {
+        // screen width and height:
+        let width = UIScreen.main.bounds.size.width
+        let height = UIScreen.main.bounds.size.height
+        
+        imageViewBackground = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: 100))
+        imageViewBackground.image = UIImage(named: "starwars_posters")
+        
+        //change the content mode:
+        imageViewBackground.contentMode = UIView.ContentMode.top
+        imageViewBackground.clipsToBounds = false
+        
+        tableView.backgroundView = imageViewBackground
+        //tableView.sendSubviewToBack(imageViewBackground)
+        
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print(tableView.contentOffset.y)
+        
+        let topInset = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0
+        let navHeight = navigationController?.navigationBar.frame.height ?? 0
+        let contentOffsetY = scrollView.contentOffset.y + navHeight + topInset + cellHeight
+        
+        let alpha = contentOffsetY / cellHeight
+        imageViewBackground?.alpha = 1 - alpha + 0.2
+        print(alpha)
+        
+        let scale = cellHeight + contentOffsetY
+        imageViewBackground?.transform = CGAffineTransform(scaleX: scale / cellHeight, y: scale / cellHeight)
+        
     }
         
 }
