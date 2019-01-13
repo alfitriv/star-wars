@@ -29,7 +29,7 @@ class ViewController: UITableViewController {
         tableView.separatorColor = .clear
         addBackground()
         networkLayer.fetchPeople(successHandler: { [weak self] (starwars) in
-            //print(starwars)
+            print(starwars)
             guard let strongSelf = self, let results = starwars?.results else {
                 return
             }
@@ -75,6 +75,20 @@ class ViewController: UITableViewController {
         return peopleCell
     }
     
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let peopleData = people[indexPath.row]
+//        let peopleDetailController = PeopleListViewController()
+//        peopleDetailController.peopleData = peopleData
+//        self.navigationController?.pushViewController(peopleDetailController, animated: true)
+//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = tableView.indexPathForSelectedRow
+        let index = people[indexPath!.row]
+        let detailViewController = segue.destination as! PeopleListViewController
+        detailViewController.peopleData = index
+    }
+    
     func addBackground() {
         // screen width and height:
         let width = UIScreen.main.bounds.size.width
@@ -109,6 +123,7 @@ class ViewController: UITableViewController {
     }
         
 }
+
 
 
 

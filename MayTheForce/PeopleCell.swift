@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PeopleCell: UITableViewCell {
 
@@ -25,6 +26,11 @@ class PeopleCell: UITableViewCell {
         var prettyFormatter = Utils.dateFormatter
         textLabel?.text = model.name
         detailTextLabel?.text = prettyFormatter.string(from: model.created)
+//        var URLString = model.homeworld
+//        guard let url = URL(string: URLString) else {
+//            return
+//        }
+//        imageView?.kf.setImage(with: url)
     }
 
 }

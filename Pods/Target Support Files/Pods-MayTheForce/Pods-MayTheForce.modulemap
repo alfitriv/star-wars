@@ -1,0 +1,6 @@
+framework module Pods_MayTheForce {
+  umbrella header "Pods-MayTheForce-umbrella.h"
+
+  export *
+  module * { export * }
+}

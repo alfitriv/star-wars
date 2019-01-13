@@ -12,4 +12,5 @@ struct Person: Codable {
     var name: String
     //var height: String
     var created: Date
+    var homeworld: String
 }

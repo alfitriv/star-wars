@@ -20,6 +20,10 @@
 		3805FC8E21E3063D0055883A /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC8D21E3063D0055883A /* PeopleCell.swift */; };
 		3805FC9021E339390055883A /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC8F21E339390055883A /* Planet.swift */; };
 		3805FC9221E33E030055883A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC9121E33E030055883A /* Utils.swift */; };
+		3805FC9A21EB677B0055883A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3805FC9921EB677B0055883A /* Launch Screen.storyboard */; };
+		3805FC9C21EB728A0055883A /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FC9B21EB728A0055883A /* PeopleListViewController.swift */; };
+		9D0C11F49384D2BD8644C8FA /* Pods_MayTheForceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4295113BB47AEC02960026 /* Pods_MayTheForceTests.framework */; };
+		EE5AEAE2860F9AE7090A8633 /* Pods_MayTheForce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311872A2C756FF8A7CA386B8 /* Pods_MayTheForce.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30099DA20B7CFC2190510F62 /* Pods-MayTheForce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForce.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MayTheForce/Pods-MayTheForce.debug.xcconfig"; sourceTree = "<group>"; };
+		311872A2C756FF8A7CA386B8 /* Pods_MayTheForce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3805FC1E21E0E4D10055883A /* MayTheForce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayTheForce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3805FC2121E0E4D10055883A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3805FC2321E0E4D10055883A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +56,12 @@
 		3805FC8D21E3063D0055883A /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 		3805FC8F21E339390055883A /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		3805FC9121E33E030055883A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3805FC9921EB677B0055883A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3805FC9B21EB728A0055883A /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
+		3E311170FD3BB73D8BFEF404 /* Pods-MayTheForceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MayTheForceTests/Pods-MayTheForceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4161D4462F1CBFD6C7EF391C /* Pods-MayTheForceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MayTheForceTests/Pods-MayTheForceTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B4295113BB47AEC02960026 /* Pods_MayTheForceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD5336A7F1D9BD8DDFCCADD /* Pods-MayTheForce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForce.release.xcconfig"; path = "Pods/Target Support Files/Pods-MayTheForce/Pods-MayTheForce.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5AEAE2860F9AE7090A8633 /* Pods_MayTheForce.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0C11F49384D2BD8644C8FA /* Pods_MayTheForceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,8 @@
 				3805FC2021E0E4D10055883A /* MayTheForce */,
 				3805FC3521E0E4D20055883A /* MayTheForceTests */,
 				3805FC1F21E0E4D10055883A /* Products */,
+				846D09475E4BEEA9A9E1F579 /* Pods */,
+				3D8FB4811395E1C1DEF22C17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +120,8 @@
 				3805FC2A21E0E4D20055883A /* LaunchScreen.storyboard */,
 				3805FC2D21E0E4D20055883A /* Info.plist */,
 				3805FC9121E33E030055883A /* Utils.swift */,
+				3805FC9921EB677B0055883A /* Launch Screen.storyboard */,
+				3805FC9B21EB728A0055883A /* PeopleListViewController.swift */,
 			);
 			path = MayTheForce;
 			sourceTree = "<group>";
@@ -117,6 +135,26 @@
 			path = MayTheForceTests;
 			sourceTree = "<group>";
 		};
+		3D8FB4811395E1C1DEF22C17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				311872A2C756FF8A7CA386B8 /* Pods_MayTheForce.framework */,
+				8B4295113BB47AEC02960026 /* Pods_MayTheForceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		846D09475E4BEEA9A9E1F579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30099DA20B7CFC2190510F62 /* Pods-MayTheForce.debug.xcconfig */,
+				9CD5336A7F1D9BD8DDFCCADD /* Pods-MayTheForce.release.xcconfig */,
+				3E311170FD3BB73D8BFEF404 /* Pods-MayTheForceTests.debug.xcconfig */,
+				4161D4462F1CBFD6C7EF391C /* Pods-MayTheForceTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3805FC3B21E0E4D20055883A /* Build configuration list for PBXNativeTarget "MayTheForce" */;
 			buildPhases = (
+				4E8D810D06D53EA4E22B0DD6 /* [CP] Check Pods Manifest.lock */,
 				3805FC1A21E0E4D10055883A /* Sources */,
 				3805FC1B21E0E4D10055883A /* Frameworks */,
 				3805FC1C21E0E4D10055883A /* Resources */,
+				DDC43779E41D4865407DA019 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3805FC3E21E0E4D20055883A /* Build configuration list for PBXNativeTarget "MayTheForceTests" */;
 			buildPhases = (
+				3F47BA4190B0BB4B71FFC3C8 /* [CP] Check Pods Manifest.lock */,
 				3805FC2E21E0E4D20055883A /* Sources */,
 				3805FC2F21E0E4D20055883A /* Frameworks */,
 				3805FC3021E0E4D20055883A /* Resources */,
@@ -201,6 +242,7 @@
 				3805FC4621E0E5020055883A /* people.json in Resources */,
 				3805FC2C21E0E4D20055883A /* LaunchScreen.storyboard in Resources */,
 				3805FC2921E0E4D20055883A /* Assets.xcassets in Resources */,
+				3805FC9A21EB677B0055883A /* Launch Screen.storyboard in Resources */,
 				3805FC2721E0E4D10055883A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,12 +256,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F47BA4190B0BB4B71FFC3C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayTheForceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E8D810D06D53EA4E22B0DD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayTheForce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC43779E41D4865407DA019 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MayTheForce/Pods-MayTheForce-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MayTheForce/Pods-MayTheForce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3805FC1A21E0E4D10055883A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3805FC4421E0E4F00055883A /* StarWars.swift in Sources */,
+				3805FC9C21EB728A0055883A /* PeopleListViewController.swift in Sources */,
 				3805FC4321E0E4F00055883A /* Person.swift in Sources */,
 				3805FC8E21E3063D0055883A /* PeopleCell.swift in Sources */,
 				3805FC2421E0E4D10055883A /* ViewController.swift in Sources */,
@@ -386,6 +486,7 @@
 		};
 		3805FC3C21E0E4D20055883A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30099DA20B7CFC2190510F62 /* Pods-MayTheForce.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -405,6 +506,7 @@
 		};
 		3805FC3D21E0E4D20055883A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CD5336A7F1D9BD8DDFCCADD /* Pods-MayTheForce.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,6 +526,7 @@
 		};
 		3805FC3F21E0E4D20055883A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E311170FD3BB73D8BFEF404 /* Pods-MayTheForceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -444,6 +547,7 @@
 		};
 		3805FC4021E0E4D20055883A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4161D4462F1CBFD6C7EF391C /* Pods-MayTheForceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
