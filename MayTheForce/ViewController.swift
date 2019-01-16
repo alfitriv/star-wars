@@ -28,6 +28,7 @@ class ViewController: UITableViewController {
         tableView.contentInset = UIEdgeInsets(top: 200, left: 0, bottom: 0, right: 0)
         tableView.separatorColor = .clear
         addBackground()
+        tableView.register(UINib(nibName: "PeopleViewCell", bundle: nil), forCellReuseIdentifier: "PeopleViewCell")
         networkLayer.fetchPeople(successHandler: { [weak self] (starwars) in
             print(starwars)
             guard let strongSelf = self, let results = starwars?.results else {
@@ -66,28 +67,30 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let peopleCell = tableView.dequeueReusableCell(
-            withIdentifier: "peopleCell",
+            withIdentifier: "PeopleViewCell",
             for: indexPath
-            ) as? PeopleCell else {
+            ) as? PeopleViewCell else {
                 fatalError()
         }
         peopleCell.updateData(model: people[indexPath.row])
         return peopleCell
     }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let peopleData = people[indexPath.row]
-//        let peopleDetailController = PeopleListViewController()
-//        peopleDetailController.peopleData = peopleData
-//        self.navigationController?.pushViewController(peopleDetailController, animated: true)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let peopleData = people[indexPath.row]
+        let peopleListVC = PeopleListViewController.init(nibName: "PeopleListViewController", bundle: nil)
+        
+        peopleListVC.peopleData = peopleData
+        navigationController?.pushViewController(peopleListVC, animated: true)
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let indexPath = tableView.indexPathForSelectedRow
+//        let index = people[indexPath!.row]
+//        let detailViewController = segue.destination as! PeopleListViewController
+//        detailViewController.peopleData = index
 //    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let indexPath = tableView.indexPathForSelectedRow
-        let index = people[indexPath!.row]
-        let detailViewController = segue.destination as! PeopleListViewController
-        detailViewController.peopleData = index
-    }
     
     func addBackground() {
         // screen width and height:

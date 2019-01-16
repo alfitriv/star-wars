@@ -11,11 +11,16 @@ import UIKit
 class PeopleListViewController: UIViewController {
     var peopleData: Person?
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let peopleName = peopleData?.name {
             nameLabel?.text = peopleName
+        }
+        
+        if let peopleHeight = peopleData?.height {
+            heightLabel?.text = "Height: \(peopleHeight)"
         }
 
         // Do any additional setup after loading the view.
