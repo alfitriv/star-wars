@@ -25,6 +25,7 @@
 		3805FCAB21EC81E30055883A /* PeopleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805FCA921EC81E30055883A /* PeopleViewCell.swift */; };
 		3805FCAC21EC81E30055883A /* PeopleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3805FCAA21EC81E30055883A /* PeopleViewCell.xib */; };
 		382B703821F072F6004DDF5D /* PWAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B703721F072F6004DDF5D /* PWAViewController.swift */; };
+		383D6267223AB365002E124A /* giphy (2).gif in Resources */ = {isa = PBXBuildFile; fileRef = 383D6266223AB365002E124A /* giphy (2).gif */; };
 		387A51E221EF1DBD008549B6 /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A51E121EF1DBD008549B6 /* PeopleCollectionViewController.swift */; };
 		387A51E421EF1E1C008549B6 /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A51E321EF1E1C008549B6 /* PeopleCollectionViewCell.swift */; };
 		9D0C11F49384D2BD8644C8FA /* Pods_MayTheForceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4295113BB47AEC02960026 /* Pods_MayTheForceTests.framework */; };
@@ -66,6 +67,7 @@
 		3805FCA921EC81E30055883A /* PeopleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewCell.swift; sourceTree = "<group>"; };
 		3805FCAA21EC81E30055883A /* PeopleViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleViewCell.xib; sourceTree = "<group>"; };
 		382B703721F072F6004DDF5D /* PWAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWAViewController.swift; sourceTree = "<group>"; };
+		383D6266223AB365002E124A /* giphy (2).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy (2).gif"; sourceTree = "<group>"; };
 		387A51E121EF1DBD008549B6 /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewController.swift; sourceTree = "<group>"; };
 		387A51E321EF1E1C008549B6 /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
 		3E311170FD3BB73D8BFEF404 /* Pods-MayTheForceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MayTheForceTests/Pods-MayTheForceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		3805FC1521E0E4D10055883A = {
 			isa = PBXGroup;
 			children = (
+				383D6265223AB34E002E124A /* demo */,
 				3805FC2021E0E4D10055883A /* MayTheForce */,
 				3805FC3521E0E4D20055883A /* MayTheForceTests */,
 				3805FC1F21E0E4D10055883A /* Products */,
@@ -148,6 +151,14 @@
 				3805FC3821E0E4D20055883A /* Info.plist */,
 			);
 			path = MayTheForceTests;
+			sourceTree = "<group>";
+		};
+		383D6265223AB34E002E124A /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				383D6266223AB365002E124A /* giphy (2).gif */,
+			);
+			path = demo;
 			sourceTree = "<group>";
 		};
 		3D8FB4811395E1C1DEF22C17 /* Frameworks */ = {
@@ -259,6 +270,7 @@
 				3805FC2C21E0E4D20055883A /* LaunchScreen.storyboard in Resources */,
 				3805FC2921E0E4D20055883A /* Assets.xcassets in Resources */,
 				3805FC9A21EB677B0055883A /* Launch Screen.storyboard in Resources */,
+				383D6267223AB365002E124A /* giphy (2).gif in Resources */,
 				3805FC2721E0E4D10055883A /* Main.storyboard in Resources */,
 				3805FCA621EC7E6A0055883A /* PeopleListViewController.xib in Resources */,
 			);

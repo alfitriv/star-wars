@@ -14,7 +14,7 @@ git clone https://github.com/alfitriv/star-wars.git
 Choose your device scheme and click run.
 
 ## What it looks like
-![](giphy (2).gif)
+![](demo/giphy (2).gif)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
