@@ -11,6 +11,8 @@ import Foundation
 //1 Make http request
 struct NetworkLayer {
     
+    static var shared = NetworkLayer()
+    private init (){}
     
     static var jsonDecoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()
@@ -60,6 +62,7 @@ struct NetworkLayer {
 //                errorHandler(APIError.invalidJSONParsing)
             }
             }.resume()
+        
     }
     
 //    func fetchPlanet() {

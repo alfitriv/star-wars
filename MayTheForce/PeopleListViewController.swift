@@ -12,6 +12,7 @@ class PeopleListViewController: UIViewController {
     var peopleData: Person?
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,8 @@ class PeopleListViewController: UIViewController {
             heightLabel?.text = "Height: \(peopleHeight)"
         }
 
-        // Do any additional setup after loading the view.
+        profileImage.layer.cornerRadius = profileImage.frame.height/2
+        profileImage.clipsToBounds = true
     }
     
 

@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import SafariServices
 
 class ViewController: UITableViewController {
     
-    var networkLayer = NetworkLayer()
+    var networkLayer = NetworkLayer.shared
     var people: [Person] = [] {
         didSet {
             tableView.reloadData()
@@ -79,9 +80,11 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let peopleData = people[indexPath.row]
         let peopleListVC = PeopleListViewController.init(nibName: "PeopleListViewController", bundle: nil)
-        
+
         peopleListVC.peopleData = peopleData
         navigationController?.pushViewController(peopleListVC, animated: true)
+        
+
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
